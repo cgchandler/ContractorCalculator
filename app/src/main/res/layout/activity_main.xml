@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textLabor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:text="Labor:"
+        android:textSize="@dimen/prompt_text_size"
+        app:layout_constraintBottom_toBottomOf="@+id/editLabor"
+        app:layout_constraintEnd_toStartOf="@+id/editLabor"
+        app:layout_constraintTop_toTopOf="@+id/editLabor" />
+
+    <EditText
+        android:id="@+id/editLabor"
+        android:layout_width="170dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textSize="@dimen/prompt_text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.767"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.105" />
+
+    <TextView
+        android:id="@+id/textMaterials"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:text="Materials:"
+        android:textSize="@dimen/prompt_text_size"
+        app:layout_constraintBottom_toBottomOf="@+id/editMaterials"
+        app:layout_constraintEnd_toStartOf="@+id/editMaterials"
+        app:layout_constraintTop_toTopOf="@+id/editMaterials" />
+
+    <EditText
+        android:id="@+id/editMaterials"
+        android:layout_width="170dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textSize="@dimen/prompt_text_size"
+        app:layout_constraintStart_toStartOf="@+id/editLabor"
+        app:layout_constraintTop_toBottomOf="@+id/editLabor" />
+
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:text="Calculate"
+        android:textSize="@dimen/button_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editMaterials" />
+
+    <TextView
+        android:id="@+id/textSubTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SubTotal:"
+        android:layout_marginRight="20dp"
+        android:textSize="@dimen/prompt_text_size"
+        app:layout_constraintBottom_toBottomOf="@+id/textSubTotalAmount"
+        app:layout_constraintEnd_toStartOf="@+id/textSubTotalAmount" />
+
+    <TextView
+        android:id="@+id/textSubTotalAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="txtSubTotalAmount"
+        android:textSize="@dimen/prompt_text_size"
+        app:layout_constraintStart_toStartOf="@+id/editMaterials"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCalculate" />
+
+    <TextView
+        android:id="@+id/textTax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tax:"
+        android:layout_marginRight="20dp"
+        android:textSize="@dimen/prompt_text_size"
+        app:layout_constraintBottom_toBottomOf="@+id/textTaxAmount"
+        app:layout_constraintEnd_toStartOf="@+id/textTaxAmount" />
+
+    <TextView
+        android:id="@+id/textTaxAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="txtTaxAmount"
+        android:textSize="@dimen/prompt_text_size"
+        app:layout_constraintStart_toStartOf="@+id/textSubTotalAmount"
+        app:layout_constraintTop_toBottomOf="@+id/textSubTotalAmount" />
+
+    <TextView
+        android:id="@+id/textTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total:"
+        android:layout_marginRight="20dp"
+        android:textSize="@dimen/prompt_text_size"
+        app:layout_constraintBottom_toBottomOf="@+id/textTotalAmount"
+        app:layout_constraintEnd_toStartOf="@+id/textTotalAmount" />
+
+    <TextView
+        android:id="@+id/textTotalAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="txtTotalAmount"
+        android:textSize="@dimen/prompt_text_size"
+        app:layout_constraintStart_toStartOf="@+id/textTaxAmount"
+        app:layout_constraintTop_toBottomOf="@+id/textTaxAmount" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

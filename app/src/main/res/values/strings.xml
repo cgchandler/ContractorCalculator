@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Contractor Caculator</string>
+    <string name="dollar_amount">$%1$,.2f</string>
+</resources>
